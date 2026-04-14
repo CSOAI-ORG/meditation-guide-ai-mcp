@@ -1,21 +1,6 @@
 {
   "name": "meditation-guide-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Meditation Guide tools for AI agents and LLMs",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/meditation-guide-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
-  "tools": [
-    "get_meditation",
-    "breathing_exercise"
-  ],
-  "categories": [
-    "Health",
-    "Wellness"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+  "description": "Deliver guided meditation scripts, breathing exercises, and mindfulness timers.",
+  "version": "1.0.0",
+  "tools": []
 }

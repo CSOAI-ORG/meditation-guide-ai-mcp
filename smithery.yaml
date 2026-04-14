@@ -1,10 +1,5 @@
 name: meditation-guide-ai-mcp
-description: "MEOK AI Labs — Meditation Guide tools for AI agents and LLMs"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/meditation-guide-ai-mcp
-license: MIT
-categories: [Health, Wellness]
-tags: [meditation, mindfulness, guided-meditation, relaxation, mental-health]
-runtime: python
-entrypoint: server.py
+description: Deliver guided meditation scripts, breathing exercises, and mindfulness
+  timers.
+version: 1.0.0
+tools: []
