@@ -1,23 +1,75 @@
 {
   "name": "meditation-guide-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Generate guided meditations, breathing exercises, and mindfulness practices. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
       "name": "get_meditation",
-      "description": "Get a guided meditation",
+      "description": "Get a guided meditation script. Styles: calm, focus, sleep, stress. Duration adjusts detail level.",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "style": {
+            "type": "string"
+          },
+          "duration_minutes": {
+            "type": "integer"
+          }
+        },
         "required": []
       }
     },
     {
-      "name": "breathing_exercise",
-      "description": "Get a breathing exercise",
+      "name": "track_session",
+      "description": "Log a completed meditation session. Mood scores 1-10 (1=worst, 10=best).",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "style": {
+            "type": "string"
+          },
+          "duration_minutes": {
+            "type": "integer"
+          },
+          "mood_before": {
+            "type": "integer"
+          },
+          "mood_after": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "style",
+          "duration_minutes"
+        ]
+      }
+    },
+    {
+      "name": "get_breathing_exercise",
+      "description": "Get a structured breathing exercise. Techniques: box, 478, energize, calm.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "technique": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "suggest_practice",
+      "description": "Suggest a meditation or breathing practice based on your goal and available time. Goals: general, sleep, focus, stress, energy.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "goal": {
+            "type": "string"
+          },
+          "available_minutes": {
+            "type": "integer"
+          }
+        },
         "required": []
       }
     }

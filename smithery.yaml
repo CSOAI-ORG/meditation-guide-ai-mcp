@@ -1,10 +1,47 @@
 name: meditation-guide-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Generate guided meditations, breathing exercises, and mindfulness practices.
+  By MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: get_meditation
-  description: Get a guided meditation
-  parameters: []
-- name: breathing_exercise
-  description: Get a breathing exercise
-  parameters: []
+  description: 'Get a guided meditation script. Styles: calm, focus, sleep, stress.
+    Duration adjusts detail level.'
+  parameters:
+  - name: style
+    type: string
+    required: false
+  - name: duration_minutes
+    type: integer
+    required: false
+- name: track_session
+  description: Log a completed meditation session. Mood scores 1-10 (1=worst, 10=best).
+  parameters:
+  - name: style
+    type: string
+    required: true
+  - name: duration_minutes
+    type: integer
+    required: true
+  - name: mood_before
+    type: integer
+    required: false
+  - name: mood_after
+    type: integer
+    required: false
+- name: get_breathing_exercise
+  description: 'Get a structured breathing exercise. Techniques: box, 478, energize,
+    calm.'
+  parameters:
+  - name: technique
+    type: string
+    required: false
+- name: suggest_practice
+  description: 'Suggest a meditation or breathing practice based on your goal and
+    available time. Goals: general, sleep, focus, stress, energy.'
+  parameters:
+  - name: goal
+    type: string
+    required: false
+  - name: available_minutes
+    type: integer
+    required: false
