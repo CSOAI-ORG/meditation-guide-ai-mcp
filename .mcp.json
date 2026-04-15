@@ -1,6 +1,6 @@
 {
   "name": "meditation-guide-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Generate guided meditations, breathing exercises, and mindfulness practices. By MEOK AI Labs.",
+  "description": "Meditation Guide Ai automation via MCP. Includes get meditation, track session, get breathing exercise. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
