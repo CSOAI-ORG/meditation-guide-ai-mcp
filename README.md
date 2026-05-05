@@ -1,54 +1,38 @@
-# Meditation Guide AI
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Guided meditations, breathing exercises, and mindfulness practices
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/meditation-guide-ai-mcp)](https://github.com/CSOAI-ORG/meditation-guide-ai-mcp/stargazers)
+
+# umeditationU guideU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/meditation-guide-ai-mcp)](https://www.npmjs.com/package/@meok-ai/meditation-guide-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/meditation-guide-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install meditation-guide-ai-mcp
+# or
+npm install -g @meok-ai/meditation-guide-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-### `get_meditation`
-Get a guided meditation script. Styles: calm, focus, sleep, stress. Duration adjusts detail level.
-
-**Parameters:**
-- `style` (str): Meditation style (default: "calm")
-- `duration_minutes` (int): Duration 3-60 minutes (default: 10)
-
-### `track_session`
-Log a completed meditation session. Mood scores 1-10 (1=worst, 10=best).
-
-**Parameters:**
-- `style` (str): Meditation style used
-- `duration_minutes` (int): Actual duration
-- `mood_before` (int): Mood before session 1-10 (default: 5)
-- `mood_after` (int): Mood after session 1-10 (default: 7)
-
-### `get_breathing_exercise`
-Get a structured breathing exercise. Techniques: box, 478, energize, calm.
-
-**Parameters:**
-- `technique` (str): Breathing technique (default: "box")
-
-### `suggest_practice`
-Suggest a meditation or breathing practice based on your goal and available time.
-
-**Parameters:**
-- `goal` (str): Goal: general, sleep, focus, stress, energy (default: "general")
-- `available_minutes` (int): Time available (default: 10)
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
