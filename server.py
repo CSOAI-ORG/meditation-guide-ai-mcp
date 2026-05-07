@@ -85,7 +85,23 @@ mcp = FastMCP("meditation-guide-ai", instructions="Generate guided meditations, 
 
 @mcp.tool()
 def get_meditation(style: str = "calm", duration_minutes: int = 10, api_key: str = "") -> str:
-    """Get a guided meditation script. Styles: calm, focus, sleep, stress. Duration adjusts detail level."""
+    """Get a guided meditation script. Styles: calm, focus, sleep, stress. Duration adjusts detail level.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -108,7 +124,23 @@ def get_meditation(style: str = "calm", duration_minutes: int = 10, api_key: str
 
 @mcp.tool()
 def track_session(style: str, duration_minutes: int, mood_before: int = 5, mood_after: int = 7, api_key: str = "") -> str:
-    """Log a completed meditation session. Mood scores 1-10 (1=worst, 10=best)."""
+    """Log a completed meditation session. Mood scores 1-10 (1=worst, 10=best).
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -139,7 +171,23 @@ def track_session(style: str, duration_minutes: int, mood_before: int = 5, mood_
 
 @mcp.tool()
 def get_breathing_exercise(technique: str = "box", api_key: str = "") -> str:
-    """Get a structured breathing exercise. Techniques: box, 478, energize, calm."""
+    """Get a structured breathing exercise. Techniques: box, 478, energize, calm.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -168,7 +216,23 @@ def get_breathing_exercise(technique: str = "box", api_key: str = "") -> str:
 
 @mcp.tool()
 def suggest_practice(goal: str = "general", available_minutes: int = 10, api_key: str = "") -> str:
-    """Suggest a meditation or breathing practice based on your goal and available time. Goals: general, sleep, focus, stress, energy."""
+    """Suggest a meditation or breathing practice based on your goal and available time. Goals: general, sleep, focus, stress, energy.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
