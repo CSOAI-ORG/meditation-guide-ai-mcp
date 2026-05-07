@@ -101,6 +101,12 @@ def get_meditation(style: str = "calm", duration_minutes: int = 10, api_key: str
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        style (str): The style to analyze or process.
+        duration_minutes (int): The duration minutes to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -154,6 +160,14 @@ def track_session(style: str, duration_minutes: int, mood_before: int = 5, mood_
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        style (str): The style to analyze or process.
+        duration_minutes (int): The duration minutes to analyze or process.
+        mood_before (int): The mood before to analyze or process.
+        mood_after (int): The mood after to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -215,6 +229,11 @@ def get_breathing_exercise(technique: str = "box", api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        technique (str): The technique to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -274,6 +293,12 @@ def suggest_practice(goal: str = "general", available_minutes: int = 10, api_key
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        goal (str): The goal to analyze or process.
+        available_minutes (int): The available minutes to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
