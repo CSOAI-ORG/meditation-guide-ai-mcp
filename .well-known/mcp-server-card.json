@@ -1,0 +1,25 @@
+{
+  "name": "meditation-guide-ai-mcp",
+  "title": "Meditation Guide Ai Mcp",
+  "description": "Meditation Guide Ai automation via MCP. Includes get meditation, track session, get breathing exercise. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "get_meditation"
+    },
+    {
+      "name": "track_session"
+    },
+    {
+      "name": "get_breathing_exercise"
+    },
+    {
+      "name": "suggest_practice"
+    }
+  ]
+}

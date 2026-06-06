@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Meditation Guide AI — guided meditations, breathing exercises, and mindfulness practices. MEOK AI Labs."""
+"""
+Meditation Guide AI — guided meditations, breathing exercises, and mindfulness practices. MEOK AI Labs."""
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json
@@ -124,7 +124,7 @@ def get_meditation(style: str = "calm", duration_minutes: int = 10, api_key: str
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
     style = style.lower()
     if style not in _MEDITATIONS:
@@ -185,7 +185,7 @@ def track_session(style: str, duration_minutes: int, mood_before: int = 5, mood_
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
     mood_before = max(1, min(mood_before, 10))
     mood_after = max(1, min(mood_after, 10))
@@ -251,7 +251,7 @@ def get_breathing_exercise(technique: str = "box", api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
     technique = technique.lower()
     if technique not in _BREATHING:
@@ -316,7 +316,7 @@ def suggest_practice(goal: str = "general", available_minutes: int = 10, api_key
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
     goal = goal.lower()
     suggestions = {
@@ -350,5 +350,8 @@ def suggest_practice(goal: str = "general", available_minutes: int = 10, api_key
     }, indent=2)
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

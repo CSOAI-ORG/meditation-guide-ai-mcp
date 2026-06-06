@@ -1,0 +1,9 @@
+# meditation-guide-ai-mcp - Auto-trigger Rules
+
+When the user asks about meditation guide, use meditation-guide-ai-mcp tools: get_meditation, track_session, get_breathing_exercise, suggest_practice
+
+**MCP server for meditation guide ai mcp operations**
+
+Install: `pip install meditation-guide-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

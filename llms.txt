@@ -1,0 +1,33 @@
+# meditation-guide-ai-mcp
+# **MCP server for meditation guide ai mcp operations**
+
+## Install
+```bash
+pip install meditation-guide-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `get_meditation`
+Get a guided meditation script. Styles: calm, focus, sleep, stress. Duration adjusts detail level.
+
+### `track_session`
+Log a completed meditation session. Mood scores 1-10 (1=worst, 10=best).
+
+### `get_breathing_exercise`
+Get a structured breathing exercise. Techniques: box, 478, energize, calm.
+
+### `suggest_practice`
+Suggest a meditation or breathing practice based on your goal and available time. Goals: general, sleep, focus, stress, energy.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.
