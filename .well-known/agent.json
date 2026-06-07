@@ -1,0 +1,59 @@
+{
+  "name": "meditation-guide-ai-mcp",
+  "description": "Meditation Guide Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/meditation-guide-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "get_meditation",
+      "name": "Get Meditation",
+      "description": "get_meditation via meditation-guide-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "track_session",
+      "name": "Track Session",
+      "description": "track_session via meditation-guide-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_breathing_exercise",
+      "name": "Get Breathing Exercise",
+      "description": "get_breathing_exercise via meditation-guide-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "suggest_practice",
+      "name": "Suggest Practice",
+      "description": "suggest_practice via meditation-guide-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

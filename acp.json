@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "meditation-guide-ai-mcp",
+    "description": "Meditation Guide Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "meditation-guide-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "get_meditation",
+      "track_session",
+      "get_breathing_exercise",
+      "suggest_practice"
+    ]
+  }
+}
